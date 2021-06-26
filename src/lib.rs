@@ -78,7 +78,7 @@ impl Neuron {
 
     fn random(out_size: usize) -> Self {
         let mut rng = thread_rng();
-        let gen = || -> f32 {
+        let mut gen = || -> f32 {
             rng.gen_range(-1.0..=1.0)
         };
 
